@@ -7,12 +7,6 @@ import (
 	"unicode"
 )
 
-// AAAZZZZEEED [A-Z]
-// A3Z4E3D, nil
-
-// AAAA4D
-// , err
-
 func Compress(data string) (string, error) {
 	if data == "" {
 		return "", errors.New("error")

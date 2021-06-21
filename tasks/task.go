@@ -8,12 +8,6 @@ type Task interface {
 	Run() error
 }
 
-//Task1 -> err
-//Task2 -> nil
-//Task3 -> err
-//
-//process([Task1, Task2, Task3]) -> [err1, err2]
-
 func Process(tasks []Task) []error {
 	var errors []error
 	var wg sync.WaitGroup
